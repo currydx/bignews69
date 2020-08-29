@@ -20,3 +20,12 @@ $(function(){
     window.location.href='./login.html'
   })
 })
+$(function(){
+  $('.menu .level01').on('click',function(){
+    $(this).addClass('active').siblings('div').removeClass('active')
+    if($(this).index()===1){
+      $('.menu .level02').slideToggle()
+      $('.menu .level01').find('b').toggleClass('rotate0')
+    }
+  })
+})
