@@ -14,3 +14,9 @@ $(function(){
     }
   })
 })
+$(function(){
+  $('.header_bar .logout').click(function(){
+    window.localStorage.removeItem('token')
+    window.location.href='./login.html'
+  })
+})
