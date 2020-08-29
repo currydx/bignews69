@@ -11,15 +11,15 @@ $(function(){
         $('#mymodal').modal('show')
         $('.modal-body p').text(res.msg)
         if(res.code===200){
-            $('.determine').click(function(){
-              location.href='./index.html'
+          $('#mymodal').on('hidden.bs.modal', function () {
+            location.href='./index.html'
           })
         }
       },
-      error:function(){
-        $('#mymodal').modal('show')
-        $('.modal-body p').text('网络繁忙,请稍后再试!')
-      }
+      // error:function(){
+      //   $('#mymodal').modal('show')
+      //   $('.modal-body p').text('网络繁忙,请稍后再试!')
+      // }
     })
   })
 })
