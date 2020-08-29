@@ -13,6 +13,7 @@ $(function(){
         if(res.code===200){
           $('#mymodal').on('hidden.bs.modal', function () {
             location.href='./index.html'
+            window.localStorage.setItem('token',res.token)
           })
         } 
       },
