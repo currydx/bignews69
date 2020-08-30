@@ -26,6 +26,12 @@ $(function(){
     if($(this).index()===1){
       $('.menu .level02').slideToggle()
       $('.menu .level01').find('b').toggleClass('rotate0')
+      $('.menu .level02 li:eq(0)').click()
     }
+  })
+})
+$(function(){
+  $('.menu .level02 li').on('click',function(){
+    $(this).addClass('active').siblings().removeClass('active')
   })
 })
