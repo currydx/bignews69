@@ -151,4 +151,8 @@ $(function(){
       }
     })
   })
+
+  $('#release_btn').on('click',function(){
+    parent.$('.menu .level02 li:eq(1)').click()
+  })
 })
